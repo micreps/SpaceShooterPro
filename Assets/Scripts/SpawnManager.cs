@@ -83,7 +83,7 @@ public class SpawnManager : MonoBehaviour
         {
 
 
-            if (_LevelTimer > _TimerStart + 10f)
+            if (_LevelTimer > _TimerStart + 200f)
             {
                 if (_bossspawned == false)
                 {
