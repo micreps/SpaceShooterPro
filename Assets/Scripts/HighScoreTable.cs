@@ -54,13 +54,16 @@ public class HighScoreTable : MonoBehaviour
     {
 
         
-        Vector3 posToSpawnContainer = new Vector3(0f, 313.75f, 0f);
+        Vector3 posToSpawnContainer = new Vector3(0f, 0, 0f);
         GameObject _entryContainer = Instantiate(_entryContainerPrefab, posToSpawnContainer, Quaternion.identity);
 
 
         // _entryContainer = GameObject.Find("HighScoreEntryTemplate(Clone)");
+        _entryContainer.transform.SetParent(_HighScorePanel.transform);
 
-        _entryContainer.transform.parent = _HighScorePanel.transform;
+
+        _entryContainer.transform.localPosition = posToSpawnContainer;
+        //_entryContainer.transform.parent = _HighScorePanel.transform;
         //_entryTemplate = GameObject.Find("HighScoreEntryTemplate");
 
         //_entryTemplate.gameObject.SetActive(false);
@@ -71,9 +74,11 @@ public class HighScoreTable : MonoBehaviour
         {
 
 
-            Vector3 posToSpawn = new Vector3(600f, 310f - _templateheight * i, 0f);
+            Vector3 posToSpawn = new Vector3(130, 110f - _templateheight * i, 0f);
             GameObject entryTransform = Instantiate(_entryTemplate, posToSpawn, Quaternion.identity);
-            entryTransform.transform.parent = _entryContainer.transform;
+            entryTransform.transform.SetParent(_entryContainer.transform);
+            entryTransform.transform.localPosition = posToSpawn;
+            //entryTransform.transform.parent = _entryContainer.transform;
             // RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
             // entryRectTransform.anchoredPosition = new Vector2(0, -_templateheight * i);
             entryTransform.gameObject.SetActive(true);

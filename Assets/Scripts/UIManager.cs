@@ -266,14 +266,15 @@ public class UIManager : MonoBehaviour
                     if (_initialnumber == 1)
                     {
                         _HighScoreInitials = FirstInitial_Text.text;
-                        _HighScoreInitialUnderscore.transform.position = new Vector3(_HighScoreInitialUnderscore.transform.position.x + 26, _HighScoreInitialUnderscore.transform.position.y, _HighScoreInitialUnderscore.transform.position.z);
+                        
+                        _HighScoreInitialUnderscore.transform.localPosition = new Vector3(_HighScoreInitialUnderscore.transform.localPosition.x + 23.5f, _HighScoreInitialUnderscore.transform.localPosition.y, _HighScoreInitialUnderscore.transform.localPosition.z);
                         _addLetter = 0;
                         _initialnumber++;
                     }
                     else if (_initialnumber == 2)
                     {
                         _HighScoreInitials = _HighScoreInitials + SecondInitial_Text.text;
-                        _HighScoreInitialUnderscore.transform.position = new Vector3(_HighScoreInitialUnderscore.transform.position.x + 26, _HighScoreInitialUnderscore.transform.position.y, _HighScoreInitialUnderscore.transform.position.z);
+                        _HighScoreInitialUnderscore.transform.localPosition = new Vector3(_HighScoreInitialUnderscore.transform.localPosition.x + 23.5f, _HighScoreInitialUnderscore.transform.localPosition.y, _HighScoreInitialUnderscore.transform.localPosition.z);
                         _addLetter = 0;
                         _initialnumber++;
                     }
@@ -331,13 +332,13 @@ public class UIManager : MonoBehaviour
                     if (_initialnumber == 2)
                     {
                         _HighScoreInitials = "";
-                        _HighScoreInitialUnderscore.transform.position = new Vector3(_HighScoreInitialUnderscore.transform.position.x - 26, _HighScoreInitialUnderscore.transform.position.y, _HighScoreInitialUnderscore.transform.position.z);
+                        _HighScoreInitialUnderscore.transform.localPosition = new Vector3(_HighScoreInitialUnderscore.transform.localPosition.x - 23.5f, _HighScoreInitialUnderscore.transform.localPosition.y, _HighScoreInitialUnderscore.transform.localPosition.z);
                         _initialnumber--;
                     }
                     else if (_initialnumber == 3)
                     {
                         _HighScoreInitials = FirstInitial_Text.text;
-                        _HighScoreInitialUnderscore.transform.position = new Vector3(_HighScoreInitialUnderscore.transform.position.x - 26, _HighScoreInitialUnderscore.transform.position.y, _HighScoreInitialUnderscore.transform.position.z);
+                        _HighScoreInitialUnderscore.transform.localPosition = new Vector3(_HighScoreInitialUnderscore.transform.localPosition.x - 23.5f, _HighScoreInitialUnderscore.transform.localPosition.y, _HighScoreInitialUnderscore.transform.localPosition.z);
                         _initialnumber--;
                     }
                     else if (_initialnumber == 4)
@@ -439,14 +440,14 @@ public class UIManager : MonoBehaviour
                     if (_initialnumberP2 == 1)
                     {
                         _HighScoreInitialsP2 = FirstInitialP2_Text.text;
-                        _HighScoreInitialUnderscoreP2.transform.position = new Vector3(_HighScoreInitialUnderscoreP2.transform.position.x + 26, _HighScoreInitialUnderscoreP2.transform.position.y, _HighScoreInitialUnderscoreP2.transform.position.z);
+                        _HighScoreInitialUnderscoreP2.transform.localPosition = new Vector3(_HighScoreInitialUnderscoreP2.transform.localPosition.x + 23.5f, _HighScoreInitialUnderscoreP2.transform.localPosition.y, _HighScoreInitialUnderscoreP2.transform.localPosition.z);
                         _addLetterP2 = 0;
                         _initialnumberP2++;
                     }
                     else if (_initialnumberP2 == 2)
                     {
                         _HighScoreInitialsP2 = _HighScoreInitialsP2 + SecondInitialP2_Text.text;
-                        _HighScoreInitialUnderscoreP2.transform.position = new Vector3(_HighScoreInitialUnderscoreP2.transform.position.x + 26, _HighScoreInitialUnderscoreP2.transform.position.y, _HighScoreInitialUnderscoreP2.transform.position.z);
+                        _HighScoreInitialUnderscoreP2.transform.localPosition = new Vector3(_HighScoreInitialUnderscoreP2.transform.localPosition.x + 23.5f, _HighScoreInitialUnderscoreP2.transform.localPosition.y, _HighScoreInitialUnderscoreP2.transform.localPosition.z);
                         _addLetterP2 = 0;
                         _initialnumberP2++;
                     }
@@ -494,13 +495,13 @@ public class UIManager : MonoBehaviour
                     if (_initialnumberP2 == 2)
                     {
                         _HighScoreInitialsP2 = "";
-                        _HighScoreInitialUnderscoreP2.transform.position = new Vector3(_HighScoreInitialUnderscoreP2.transform.position.x - 26, _HighScoreInitialUnderscoreP2.transform.position.y, _HighScoreInitialUnderscoreP2.transform.position.z);
+                        _HighScoreInitialUnderscoreP2.transform.localPosition = new Vector3(_HighScoreInitialUnderscoreP2.transform.localPosition.x - 23.5f, _HighScoreInitialUnderscoreP2.transform.localPosition.y, _HighScoreInitialUnderscoreP2.transform.localPosition.z);
                         _initialnumberP2--;
                     }
                     else if (_initialnumberP2 == 3)
                     {
                         _HighScoreInitialsP2 = FirstInitial_Text.text;
-                        _HighScoreInitialUnderscoreP2.transform.position = new Vector3(_HighScoreInitialUnderscoreP2.transform.position.x - 26, _HighScoreInitialUnderscoreP2.transform.position.y, _HighScoreInitialUnderscoreP2.transform.position.z);
+                        _HighScoreInitialUnderscoreP2.transform.localPosition = new Vector3(_HighScoreInitialUnderscoreP2.transform.localPosition.x - 23.5f, _HighScoreInitialUnderscoreP2.transform.localPosition.y, _HighScoreInitialUnderscoreP2.transform.localPosition.z);
                         _initialnumberP2--;
                     }
                     else if (_initialnumberP2 == 4)
