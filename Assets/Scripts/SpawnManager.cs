@@ -56,6 +56,7 @@ public class SpawnManager : MonoBehaviour
     private float _LevelTimer = 0;
 
     private bool _levelstarted = false;
+    [SerializeField]
     private float _TimerStart;
 
 
@@ -117,7 +118,7 @@ public class SpawnManager : MonoBehaviour
     public void StartSpawning()
     {
         _levelstarted = true;
-        _TimerStart = Time.time;
+        _TimerStart = Time.deltaTime;
         _Audiosource = GetComponent<AudioSource>();
         _PPVolume = GameObject.Find("Post Process Volume").GetComponent<PostProcessFunctions>();
         StartCoroutine(EmergencyRoutine());

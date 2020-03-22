@@ -2386,7 +2386,7 @@ PrefabInstance:
     - target: {fileID: 2079249534771657287, guid: 8dded630c1e8546429952d6048becf09,
         type: 3}
       propertyPath: _boss1health
-      value: 5
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2789757996290791276, guid: 8dded630c1e8546429952d6048becf09,
         type: 3}
