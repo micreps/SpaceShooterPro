@@ -821,7 +821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &498928118
 RectTransform:
   m_ObjectHideFlags: 0
@@ -838,7 +838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.2, y: 0.0000069141}
+  m_AnchoredPosition: {x: 11.2, y: 17}
   m_SizeDelta: {x: 381.1, y: 66.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498928119
@@ -1342,6 +1342,7 @@ MonoBehaviour:
   - {fileID: 4828897774352723762, guid: 0f1e4370f89bcde4ba6b2dcb882abebb, type: 3}
   _EnemyBoss1: {fileID: 1138428327}
   _LevelTimer: 0
+  _TimerStart: 0
 --- !u!4 &827993830
 Transform:
   m_ObjectHideFlags: 0
